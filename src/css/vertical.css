@@ -4,5 +4,8 @@ html,body {
 }
 
 canvas {
-    background: linear-gradient(to bottom, rgba(125,185,232,1) 0%,rgba(41,137,216,1) 50%,rgba(30,87,153,1) 100%);
+    
+    background: blue;
+    background: radial-gradient(at center 175vh, white 0%, blue 60%);
+
 }
