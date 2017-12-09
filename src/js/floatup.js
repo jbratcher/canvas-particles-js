@@ -64,8 +64,8 @@ function Circle(x,y,dx,dy,rad,color) {
         
         // Move circle to bottom once it reaches top
         
-        if(this.y + this.rad > window.innerHeight) {
-            this.y = 0;
+        if(this.y + this.rad < 0) {
+            this.y = window.innerHeight;
         }
         
         // Increment position (x,y)
@@ -106,7 +106,7 @@ function init() {
         var x = Math.random() * (window.innerWidth - rad * 2) + rad;
         var y = Math.random() * (window.innerHeight - rad *2) + rad;
         var dx = 0;
-        var dy = (Math.random() - 0.5) * 3;
+        var dy = -Math.abs((Math.random() - 0.5)) * 2;
         var color = "white";
         circles.push(new Circle(x,y,dx,dy,rad,color));
         
