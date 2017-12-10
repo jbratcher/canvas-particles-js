@@ -1,0 +1,11 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    
+    background: #fefefe;
+    /*background: radial-gradient(at center 175vh, #9999ff 0%, blue 80%);*/
+
+}

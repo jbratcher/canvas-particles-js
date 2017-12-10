@@ -1,6 +1,6 @@
 # canvas-particles
 
-##### v1.0.4
+##### v1.0.5
 
 A Canvas Particle Library written in vanilla JS.
 
@@ -24,8 +24,13 @@ The CSS file remove padding and margin from the body and a background radial gra
 * Vertical: White balls of various small sizes rise from top and fall from bottom infinitely (blue radial background from botom center)
 * Float Up: White balls of various small sizes float up infinitely (blue radial background from botom center)
 * Float down: White balls of various small sizes float down infinitely (blue radial background from botom center)
+* Gravity: Multicolored balls fall down with simulated gravity and friction
 
 ## Change Log
+
+v1.0.5
+
+* Added Gravity
 
 v1.0.4
 
