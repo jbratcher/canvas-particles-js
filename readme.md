@@ -1,6 +1,6 @@
 # canvas-particles
 
-##### v1.0.5
+##### v1.0.6
 
 A Canvas Particle Library written in vanilla JS.
 
@@ -28,9 +28,15 @@ The CSS file remove padding and margin from the body and a background radial gra
 
 ## Change Log
 
+v1.0.6
+
+* Added Wobble Up and Wobble Down (Yay!)
+* Updated Readme
+
 v1.0.5
 
 * Added Gravity
+* Updated Readme
 
 v1.0.4
 
@@ -54,6 +60,5 @@ v1.0.1
 v1.0.0
 
 * Inital commit of Balls
-
 
 
