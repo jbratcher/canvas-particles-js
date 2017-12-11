@@ -20,44 +20,46 @@ The CSS file remove padding and margin from the body and a background radial gra
 
 ## Current Animations
 
-* Balls: Multicolored Balls that grow on mouse over (solid background)
-* Vertical: White balls of various small sizes rise from top and fall from bottom infinitely (blue radial background from botom center)
-* Float Up: White balls of various small sizes float up infinitely (blue radial background from botom center)
-* Float down: White balls of various small sizes float down infinitely (blue radial background from botom center)
-* Gravity: Multicolored balls fall down with simulated gravity and friction
+* <strong>Balls</strong>: Multicolored Balls that grow on mouse over (solid background)
+* <strong>Vertical</strong>: White balls of various small sizes rise from top and fall from bottom infinitely (blue radial background from botom center)
+* <strong>Float Up</strong>: White balls of various small sizes float up infinitely (blue radial background from botom center)
+* <strong>Float down</strong>: White balls of various small sizes float down infinitely (blue radial background from botom center)
+* <strong>Gravity</strong>: Multicolored balls fall down with simulated gravity and friction
+* <strong>Wobble Down</strong>: White balls fall down as they wobble on the x-axis
+* <strong>Wobble Up</strong>: White balls float up as they wobble on the x-axis
 
 ## Change Log
 
-v1.0.6
+#### v1.0.6
 
 * Added Wobble Up and Wobble Down (Yay!)
 * Updated Readme
 
-v1.0.5
+#### v1.0.5
 
 * Added Gravity
 * Updated Readme
 
-v1.0.4
+#### v1.0.4
 
 * Added Fall Down
 * Reduced dy on all except Balls
 
-v1.0.3
+#### v1.0.3
 
 * Added Float Up
 
-v1.0.2
+#### v1.0.2
 
 * Added Vertical
 * Added blue radial gradient to all except Balls
 
-v1.0.1
+#### v1.0.1
 
 * Refactor of Balls
 * Branded color array for Balls
 
-v1.0.0
+#### v1.0.0
 
 * Inital commit of Balls
 
