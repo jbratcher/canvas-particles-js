@@ -1,6 +1,6 @@
 # canvas-particles
 
-##### v1.0.6
+##### v1.0.7
 
 A Canvas Particle Library written in vanilla JS.
 
@@ -27,8 +27,14 @@ The CSS file remove padding and margin from the body and a background radial gra
 * <strong>Gravity</strong>: Multicolored balls fall down with simulated gravity and friction
 * <strong>Wobble Down</strong>: White balls fall down as they wobble on the x-axis
 * <strong>Wobble Up</strong>: White balls float up as they wobble on the x-axis
+* <strong>Weather</strong>: White balls fly to the right simulating snow weather. 
 
 ## Change Log
+
+#### v1.0.7
+
+* Added Weather
+* Updated Readme
 
 #### v1.0.6
 
