@@ -14,7 +14,9 @@ Copy the HTML, CSS, and JS files for the animation you want and place it in your
 
 #### To add to an existing project
 
-Copy just the JS file(s) for the animation(s) you want and place it in your project directory.
+Copy just the JS file for the animation you want and place it in your project directory.
+Add a link to the js file from your html file.
+Add a canvas element to your html file where you would like the animation to display.
 
 The CSS file remove padding and margin from the body and a background radial gradient which is optional but gives a nice aesthetic
 

@@ -24,7 +24,7 @@ var mouse = {
 // Utility Functions
 
 function randomIntFromRange(min, max) {
-    return Math.random() * (max - min + 1) + min;
+    return Math.random() * (max - min) + min;
 }
 
 // Event Listeners
@@ -47,7 +47,7 @@ window.addEventListener("resize", function() {
 
 // Create Circle function
 
-function Circle(x,y,dx,dy,rad,color) {
+function Circle(x,y,dx,dy,rad,color,boundaryRight,boundaryLeft) {
     this.x = x;
     this.y = y;
     this.dx = dx;
@@ -55,6 +55,8 @@ function Circle(x,y,dx,dy,rad,color) {
     this.rad = rad;
     var minRad = rad;
     var maxRad = (rad * 2);
+    this.boundaryRight = boundaryRight;
+    this.boundaryLeft = boundaryLeft;
     this.color = color;
     
     // Draw circle function
@@ -70,8 +72,8 @@ function Circle(x,y,dx,dy,rad,color) {
         
         // Loop circle when it hits the side of the window
         
-        if(this.x + this.rad > window.innerWidth) {
-            this.x = 0;
+        if(this.x + this.rad < 0) {
+            this.x = window.innerWidth;
         }
         
         if(this.y + this.rad > window.innerHeight) {
@@ -115,10 +117,12 @@ function init() {
         var rad = randomIntFromRange(2,4);
         var x = Math.random() * (window.innerWidth - rad * 2) + rad;
         var y = Math.random() * (window.innerHeight - rad *2) + rad;
-        var dx = 5;
+        var dx = -rad * 2;
         var dy = randomIntFromRange(1,3);
         var color = "white";
-        circles.push(new Circle(x,y,dx,dy,rad,color));
+        var boundaryRight = (x + y) + rad;
+        var boundaryLeft = (x + y) - rad;
+        circles.push(new Circle(x,y,dx,dy,rad,color,boundaryRight, boundaryLeft));
         
         console.log(circles);
     }
