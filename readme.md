@@ -1,6 +1,6 @@
 # canvas-particles
 
-##### v1.0.7
+##### v1.0.8
 
 A Canvas Particle Library written in vanilla JS.
 
@@ -32,6 +32,12 @@ The CSS file remove padding and margin from the body and a background radial gra
 * <strong>Weather</strong>: White balls fly to the right simulating snow weather. 
 
 ## Change Log
+
+#### v1.0.8
+
+* Change Weather to Weather Right
+* Added Weather Left
+* Added Gravity effedct to Weather animations
 
 #### v1.0.7
 
