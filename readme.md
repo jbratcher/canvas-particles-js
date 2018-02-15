@@ -1,10 +1,8 @@
-# canvas-particles
+# Canvas Particles
+
+A Canvas Particle Library written in vanilla JS for use with the canvas HTML5 elemnt.
 
 ##### v1.0.8
-
-A Canvas Particle Library written in vanilla JS.
-
-Particle animations on HTML5 Canvas
 
 ## How to Use canvas-particles
 
@@ -18,7 +16,7 @@ Copy just the JS file for the animation you want and place it in your project di
 Add a link to the js file from your html file.
 Add a canvas element to your html file where you would like the animation to display.
 
-The CSS file remove padding and margin from the body and a background radial gradient which is optional but gives a nice aesthetic
+The CSS file removes padding and margin from the body and a background radial gradient which is optional but is included for demo purposes.
 
 ## Current Animations
 
@@ -29,7 +27,8 @@ The CSS file remove padding and margin from the body and a background radial gra
 * <strong>Gravity</strong>: Multicolored balls fall down with simulated gravity and friction
 * <strong>Wobble Down</strong>: White balls fall down as they wobble on the x-axis
 * <strong>Wobble Up</strong>: White balls float up as they wobble on the x-axis
-* <strong>Weather</strong>: White balls fly to the right simulating snow weather. 
+* <strong>Weather Left</strong>: White balls fly to the left simulating snow weather.
+* <strong>Weather Right</strong>: White balls fly to the right simulating snow weather.
 
 ## Change Log
 
@@ -37,7 +36,7 @@ The CSS file remove padding and margin from the body and a background radial gra
 
 * Change Weather to Weather Right
 * Added Weather Left
-* Added Gravity effedct to Weather animations
+* Added Gravity effect to Weather animations
 
 #### v1.0.7
 

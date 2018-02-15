@@ -53,17 +53,17 @@ function Circle(x,y,dx,dy,rad,color, boundaryRight, boundaryLeft) {
     this.dx = dx;
     this.dy = dy;
     this.rad = rad;
+    this.color = color;
     this.boundaryRight = boundaryRight;
     this.boundaryLeft = boundaryLeft;
     var minRad = rad;
     var maxRad = (rad * 2);
-    this.color = color;
     
     // Draw circle function
     
     this.draw = function() {
         ctx.beginPath();
-        ctx.arc(this.x, this.y, this.rad, 0, Math.PI *2, false);
+        ctx.arc(this.x, this.y, this.rad, 0, Math.PI *2);
         ctx.fillStyle = this.color;
         ctx.fill();
     };
@@ -94,6 +94,7 @@ function Circle(x,y,dx,dy,rad,color, boundaryRight, boundaryLeft) {
         if (mouse.x - this.x < 50 && mouse.x - this.x > -50 && mouse.y - this.y < 50 && mouse.y - this.y > -50) {
             
             // Limit circle grow size
+            
             if (this.rad < maxRad) {
                 this.rad += 1;   
             }
@@ -139,7 +140,6 @@ function init() {
         circles.push(new Circle(x,y,dx,dy,rad,color,boundaryRight,boundaryLeft));
     }
     
-
 }
 
 //  Animation function
@@ -156,7 +156,7 @@ function animation() {
     
     // Draw the circles
     
-    for (var i = 0; i < circles.length; i++) {
+    for(var i = 0; i < circles.length; i++) {
         circles[i].update();
     }
     

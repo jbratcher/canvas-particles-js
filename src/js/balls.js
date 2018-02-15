@@ -22,7 +22,7 @@ var colors = [
     "#172A40",
     "#FFF7DC",
     "#D9383A"
-    ]
+];
 
 // Mouse coordiantes
 
@@ -63,6 +63,7 @@ function Circle(x,y,dx,dy,rad,color) {
     this.color = color;
     
     // Draw circle function
+    
     this.draw = function() {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.rad, 0, Math.PI *2, false);
@@ -73,32 +74,40 @@ function Circle(x,y,dx,dy,rad,color) {
     };
     
     // Update circle position for animation
+    
     this.update = function() {
         
         // Left/Right Collision Detection for window
+        
         if (this.x + this.rad > window.innerWidth || 
             this.x - this.rad < 0) {
             this.dx = -this.dx;
         } 
         
         // Top/Bottom Collision Detection for window
+        
         if (this.y + this.rad > window.innerHeight || 
             this.y - this.rad < 0) {
             this.dy = -this.dy;
         }
         
         // Increment position (x,y)
+        
         this.x += this.dx;
         this.y += this.dy;
         
         // Interactivity (mouse and circles)
+        
         // Mouse detection for circle
+        
         if (mouse.x - this.x < 50 && mouse.x - this.x > -50 && mouse.y - this.y < 50 && mouse.y - this.y > -50) {
             // Limit circle grow size
             if (this.rad < maxRad) {
                 this.rad += 1;   
             }
-        // Limit circle shrink size    
+            
+        // Limit circle shrink size
+        
         } else if (this.rad > minRad) {
             this.rad -= 1;
         } else if (this.rad < this.minRad) {
@@ -106,21 +115,25 @@ function Circle(x,y,dx,dy,rad,color) {
         }
         
         // Draw Circle
+        
         this.draw();
         
     };
 }
 
 // Create circles array
+
 var circles = [];
 
 function init() {
     
     // Reset circles array
+    
     circles = [];
     
     // Randomize circle value (position, velocity, fill and stroke color, and opacity)
-    for (var i = 0; i < 800; i++) {
+    
+    for(var i = 0; i < 800; i++) {
         var rad = (Math.floor(Math.random() * 4)) + 1;
         var x = Math.random() * (window.innerWidth - rad * 2) + rad;
         var y = Math.random() * (window.innerHeight -rad * 2) + rad;
@@ -128,24 +141,30 @@ function init() {
         var dy = (Math.random() - 0.5) * 3;
         var color = colors[Math.floor(Math.random() * colors.length)];
         circles.push(new Circle(x,y,dx,dy,rad,color));
-        
-        console.log(circles);
     }
 }
 
 //  Animation function
+
 function animation() {
+    
     //Start loop
+    
     requestAnimationFrame(animation);
+    
     // Clear window after drawing circle
+    
     ctx.clearRect(0,0,window.innerWidth, window.innerHeight);
+    
     // Draw the circles
-    for (var i = 0; i < circles.length; i++) {
+    
+    for(var i = 0; i < circles.length; i++) {
         circles[i].update();
     }
     
 }
 
 // Run 
+
 animation();
 init();
